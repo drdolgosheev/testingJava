@@ -1,0 +1,743 @@
+{
+  "id": "af498b97-e621-423b-94fa-b1d4ab34d419",
+  "version": "2.0",
+  "name": "http://pastebin.com",
+  "url": "https://pastebin.com",
+  "tests": [{
+    "id": "54d23de0-0de8-48ad-ae93-dc192b5384a8",
+    "name": "test",
+    "commands": [{
+      "id": "db0c1ceb-592f-4fd8-bdb3-0806dbfaceec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc3294d9-8570-4298-90d9-21c2d5410701",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e4e89b0-6c7b-4214-8071-30294591358a",
+      "comment": "",
+      "command": "type",
+      "target": "id=paste_code",
+      "targets": [
+        ["id=paste_code", "id"],
+        ["name=paste_code", "name"],
+        ["css=#paste_code", "css:finder"],
+        ["xpath=//textarea[@id='paste_code']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "#include <iostream>\\n \\nint main(){\\n    int a = 0;\\n    int b = 0;\\n    char operation;\\n    std::cout << \"Enter first number: \";\\n    std::cin >> a;\\n    std::cout << \"Enter second number: \";\\n    std::cin >> b;\\n    std::cout << \"Enter operation: \";\\n    std::cin >> operation;\\n \\n    switch (operation){\\n    case '-':\\n        std::cout << \"a - b = \" << a - b <<'\\n';\\n        break;\\n    case '+':\\n        std::cout << \"a + b = \" << a + b << '\\n';\\n        break;\\n    case '*':\\n        std::cout << \"a * b = \" << a * b << '\\n';\\n        break;\\n    case '/':\\n        std::cout << \"a / b = \" << a / b << '\\n';\\n        break;\\n    default:\\n        std::cout << \"Error\\n\";\\n    }\\n    return 0;\\n}"
+    }, {
+      "id": "d1a4a651-b08a-4a83-91d5-f91989dfeb11",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-paste_format-pv-container",
+      "targets": [
+        ["id=select2-paste_format-pv-container", "id"],
+        ["css=#select2-paste_format-pv-container", "css:finder"],
+        ["xpath=//span[@id='select2-paste_format-pv-container']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div/div[2]/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4915b2a2-b890-40e6-b535-8b96680fba40",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "C++"
+    }, {
+      "id": "37bfa2c4-68bf-4822-9c3b-91c175395021",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8dfc07cc-a448-482d-b842-2da2bfeaab06",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-paste_expire_date-d9-container",
+      "targets": [
+        ["id=select2-paste_expire_date-d9-container", "id"],
+        ["css=#select2-paste_expire_date-d9-container", "css:finder"],
+        ["xpath=//span[@id='select2-paste_expire_date-d9-container']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[2]/div[2]/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70853dd4-333e-46f6-9249-f4b81378adf1",
+      "comment": "",
+      "command": "click",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1896e024-5343-4c45-8cae-0e191744a053",
+      "comment": "",
+      "command": "type",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "a21c3ad1-68ad-4508-a0f1-09dfda2e7aba",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "39b25b71-b628-462a-8105-95017e597222",
+      "comment": "Обновить окно",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07c2eae6-bebd-40e7-b68d-82f570463d7d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=edit",
+      "targets": [
+        ["linkText=edit", "linkText"],
+        ["css=.buttonsm:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'edit')]", "xpath:link"],
+        ["xpath=//div[@id='code_buttons']/span/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/edit/qeNP7FEr')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d3bbc76-913d-4ec1-baa5-ae8aebd9a819",
+      "comment": "",
+      "command": "click",
+      "target": "id=paste_code",
+      "targets": [
+        ["id=paste_code", "id"],
+        ["name=paste_code", "name"],
+        ["css=#paste_code", "css:finder"],
+        ["xpath=//textarea[@id='paste_code']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2031764a-b1fc-419f-9ae6-e16d0a0df125",
+      "comment": "",
+      "command": "type",
+      "target": "id=paste_code",
+      "targets": [
+        ["id=paste_code", "id"],
+        ["name=paste_code", "name"],
+        ["css=#paste_code", "css:finder"],
+        ["xpath=//textarea[@id='paste_code']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "#include <iostream>\\n \\nint main(){\\n    int a = 0;\\n    int b = 0;\\n    char operation;\\n    std::cout << \"Enter first number: \";\\n    std::cin >> a;\\n    std::cout << \"Enter second number: \";\\n    std::cin >> b;\\n    std::cout << \"Enter operation: \";\\n    std::cin >> operation;\\n \\n    switch (operation){\\n    case '-':\\n        std::cout << \"a - b = \" << a - b <<'\\n';\\n        break;\\n    case '+':\\n        std::cout << \"a + b = \" << a + b << '\\n';\\n        break;\\n    case '*':\\n        std::cout << \"a * b = \" << a * b << '\\n';\\n        break;\\n    case '/':\\n        std::cout << \"a / b = \" << a / b << '\\n';\\n        break;\\n    default:\\n        std::cout << \"Error\\n\";\\n    }\\n    return 1;\\n}"
+    }, {
+      "id": "21c005cd-131d-473c-9ede-17bebf05b6fe",
+      "comment": "Удалить окно",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94f5c77e-be2d-4911-a980-f92bcd34be1f",
+      "comment": "",
+      "command": "click",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c470323a-6292-4e07-871d-e83841845e91",
+      "comment": "",
+      "command": "type",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test2"
+    }, {
+      "id": "f70f69f4-b055-45dc-b13a-9d8c1f9dee7d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f7ea085e-fd32-4845-a337-028d9e0ea669",
+      "comment": "",
+      "command": "type",
+      "target": "id=paste_code",
+      "targets": [
+        ["id=paste_code", "id"],
+        ["name=paste_code", "name"],
+        ["css=#paste_code", "css:finder"],
+        ["xpath=//textarea[@id='paste_code']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "#include <iostream>\\n \\nint main(){\\n    int a = 0;\\n    int b = 0;\\n    char operation;\\n    std::cout << \"Enter first number: \";\\n    std::cin >> a;\\n    std::cout << \"Enter second number: \";\\n    std::cin >> b;\\n    std::cout << \"Enter operation: \";\\n    std::cin >> operation;\\n \\n    switch (operation){\\n    case '-':\\n        std::cout << \"a - b = \" << a - b <<'\\n';\\n        break;\\n    case '+':\\n        std::cout << \"a + b = \" << a + b << '\\n';\\n        break;\\n    case '*':\\n        std::cout << \"a * b = \" << a * b << '\\n';\\n        break;\\n    case '/':\\n        std::cout << \"a / b = \" << a / b << '\\n';\\n        break;\\n    default:\\n        std::cout << \"Error\\n\";\\n    }\\n    return 0;\\n}"
+    }, {
+      "id": "3064ff15-33eb-453e-a18c-5f35f5e18d0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94626e4a-3173-407b-b36c-cc3fe35a3c03",
+      "comment": "",
+      "command": "type",
+      "target": "name=paste_name",
+      "targets": [
+        ["name=paste_name", "name"],
+        ["css=.post_input", "css:finder"],
+        ["xpath=//input[@name='paste_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test2"
+    }, {
+      "id": "a71c1a27-2a26-4433-90ce-6ded8986e530",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-paste_expire_date-0d-container",
+      "targets": [
+        ["id=select2-paste_expire_date-0d-container", "id"],
+        ["css=#select2-paste_expire_date-0d-container", "css:finder"],
+        ["xpath=//span[@id='select2-paste_expire_date-0d-container']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[2]/div[2]/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b42289cc-3f69-4082-9933-880a6c1c6516",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9371eef7-3047-4200-93d1-4a70b3ae8033",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=delete",
+      "targets": [
+        ["linkText=delete", "linkText"],
+        ["css=.buttonsm:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'delete')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"return confirm('Are you sure you want to permanently delete this paste? There is no undo!');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='code_buttons']/span/a[8]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/delete/DdMNDXfr')]", "xpath:href"],
+        ["xpath=//a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2081aa4d-1c75-4603-961e-75446ee14ae0",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a467009a-1257-4c2d-a7d4-11d6a7f69110",
+      "comment": "",
+      "command": "click",
+      "target": "id=notice",
+      "targets": [
+        ["id=notice", "id"],
+        ["css=#notice", "css:finder"],
+        ["xpath=//div[@id='notice']", "xpath:attributes"],
+        ["xpath=//div[@id='content_left']/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40606f10-00cb-4da4-9c0b-bea50d8d3201",
+      "comment": "Проверка логаута",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "995c2e32-b9ef-4eed-aab6-0f5c80c34e0a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=b_twitter",
+      "targets": [
+        ["id=b_twitter", "id"],
+        ["css=#b_twitter", "css:finder"],
+        ["xpath=//span[@id='b_twitter']", "xpath:attributes"],
+        ["xpath=//div[@id='b_twitter2']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'TWEET')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c43e5777-9586-428d-80e0-e050cc31e520",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=b_twitter",
+      "targets": [
+        ["id=b_twitter", "id"],
+        ["css=#b_twitter", "css:finder"],
+        ["xpath=//span[@id='b_twitter']", "xpath:attributes"],
+        ["xpath=//div[@id='b_twitter2']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'TWEET')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe6754a5-e8e9-4b2f-91a5-5ba93a354b82",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//img[@title='My Pastebin']", "xpath:img"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5e63fa-cb6c-4699-ab60-25fe913f612a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cccdccd-c474-4c74-9c76-30b5deca7f2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dd_lo",
+      "targets": [
+        ["css=.dd_lo", "css:finder"],
+        ["xpath=//li[@onclick=\"location.href='/logout'\"]", "xpath:attributes"],
+        ["xpath=//div[@id='jq-dropdown-1']/ul/li[10]", "xpath:idRelative"],
+        ["xpath=//li[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b4d5ece-bec2-4e9e-88a0-4a8b5edafcc1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text",
+      "targets": [
+        ["css=.text", "css:finder"],
+        ["xpath=//div[@id='selectable']/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4477b1cf-b878-4974-afb3-da3662c3f9f2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.li1:nth-child(22) > .de1",
+      "targets": [
+        ["css=.li1:nth-child(22) > .de1", "css:finder"],
+        ["xpath=//div[@id='selectable']/ol/li[22]/div", "xpath:idRelative"],
+        ["xpath=//li[22]/div", "xpath:position"]
+      ],
+      "value": "        std::cout << \"a * b = \" << a * b << '\\n';"
+    }, {
+      "id": "7de51ddd-7dcf-493b-b33a-ce2b193449ce",
+      "comment": "Ожидаение удаления",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46677319-fcc5-4470-8b1a-cc255245d7e9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=b:nth-child(5)",
+      "targets": [
+        ["css=b:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='notice']/b", "xpath:idRelative"],
+        ["xpath=//div/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Your stats:')]", "xpath:innerText"]
+      ],
+      "value": "Your stats:"
+    }, {
+      "id": "b217701c-d9de-4ac9-8dc9-7f38431bedd5",
+      "comment": "Приветная репа",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "500fa087-73a3-4b09-a21d-2fc808b1a3de",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.i_highlight",
+      "targets": [
+        ["css=.i_highlight", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='content_left']/div[5]/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a366aa6-803d-4e48-9eff-f5ee815e5522",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.i_highlight",
+      "targets": [
+        ["css=.i_highlight", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='content_left']/div[5]/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3507f5fe-77c8-4676-9cb3-245e07e880a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=paste_code",
+      "targets": [
+        ["id=paste_code", "id"],
+        ["name=paste_code", "name"],
+        ["css=#paste_code", "css:finder"],
+        ["xpath=//textarea[@id='paste_code']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "int main(){\\n    int a = 0;\\n    int b = 0;\\n    char operation;\\n    std::cout << \"Enter first number: \";\\n    std::cin >> a;\\n    std::cout << \"Enter second number: \";\\n    std::cin >> b;\\n    std::cout << \"Enter operation: \";\\n    std::cin >> operation;\\n \\n    switch (operation){\\n    case '-':\\n        std::cout << \"a - b = \" << a - b <<'\\n';\\n        break;\\n    case '+':\\n        std::cout << \"a + b = \" << a + b << '\\n';\\n        break;\\n    case '*':\\n        std::cout << \"a * b = \" << a * b << '\\n';\\n        break;\\n    case '/':\\n        std::cout << \"a / b = \" << a / b << '\\n';\\n        break;\\n    default:\\n        std::cout << \"Error\\n\";\\n    }\\n    return 0;\\n}"
+    }, {
+      "id": "b12e5f5a-5d34-4098-88d5-5f9134accbbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-paste_private-81-container",
+      "targets": [
+        ["id=select2-paste_private-81-container", "id"],
+        ["css=#select2-paste_private-81-container", "css:finder"],
+        ["xpath=//span[@id='select2-paste_private-81-container']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[3]/div[2]/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a5a341d-eada-44ad-b951-c09dfdc9f569",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div[3]/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9563c073-25eb-4f0f-914c-c2075d4c0d6e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//img[@title='My Pastebin']", "xpath:img"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42c4e90-72f8-448e-8c28-3803896184c4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f760ca58-2555-440b-9d16-44002c456b71",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//img[@title='My Pastebin']", "xpath:img"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e97d59d-6039-42d7-b708-07229d4daf68",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a14ef446-5970-419c-825a-84827d59ff25",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hi_settings",
+      "targets": [
+        ["css=.hi_settings", "css:finder"],
+        ["xpath=//div[@id='header_icons']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "698c8fa0-fb65-4a17-a969-8931655a7403",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hi_settings",
+      "targets": [
+        ["css=.hi_settings", "css:finder"],
+        ["xpath=//div[@id='header_icons']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f08d1845-6044-4711-b267-30a8ac116939",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//img[@title='My Pastebin']", "xpath:img"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6cb485a-b40c-4383-aca7-6ab2c789a7a4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header_icon",
+      "targets": [
+        ["css=.header_icon", "css:finder"],
+        ["xpath=//div[@id='header_icon']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e3791e5-e224-409d-89c5-8f0919265704",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dd_lo",
+      "targets": [
+        ["css=.dd_lo", "css:finder"],
+        ["xpath=//li[@onclick=\"location.href='/logout'\"]", "xpath:attributes"],
+        ["xpath=//div[@id='jq-dropdown-1']/ul/li[10]", "xpath:idRelative"],
+        ["xpath=//li[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60973fd6-0d3f-4648-bfc2-a7056d2e9dcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content_text",
+      "targets": [
+        ["css=.content_text", "css:finder"],
+        ["xpath=//div[@id='content_left']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a36a340f-d738-42b7-bc11-e8dfe98e8a7a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.content_text",
+      "targets": [
+        ["css=.content_text", "css:finder"],
+        ["xpath=//div[@id='content_left']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "This is a private paste. If you created this paste, please login to view it."
+    }, {
+      "id": "158f861a-1bfa-4fa9-8c0d-eb79afe9b738",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dd_lo",
+      "targets": [
+        ["css=.dd_lo", "css:finder"],
+        ["xpath=//li[@onclick=\"location.href='/login'\"]", "xpath:attributes"],
+        ["xpath=//div[@id='jq-dropdown-1']/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a4780b5-cc27-46aa-a43c-36b62b0f82eb",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.form_frame:nth-child(1) .post_input", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e81525a-862b-4302-ad33-203e4aa41de0",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=.form_frame:nth-child(1) .post_input", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "drgogo24"
+    }, {
+      "id": "46f4111b-dcbd-48cf-97af-80c5c7a8b595",
+      "comment": "",
+      "command": "click",
+      "target": "id=content_frame",
+      "targets": [
+        ["id=content_frame", "id"],
+        ["css=#content_frame", "css:finder"],
+        ["xpath=//div[@id='content_frame']", "xpath:attributes"],
+        ["xpath=//div[@id='monster_frame']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34af050-265c-4243-9fd3-b5016d9ae212",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.button1", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5267728c-eb7f-4f50-aaf7-02ff9f9e4136",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content_text",
+      "targets": [
+        ["css=.content_text", "css:finder"],
+        ["xpath=//div[@id='content_left']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6317e22-2ee7-4081-b5ca-f5a5cb0d28c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.content_text",
+      "targets": [
+        ["css=.content_text", "css:finder"],
+        ["xpath=//div[@id='content_left']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "This is a private paste. If you created this paste, please login to view it."
+    }, {
+      "id": "54ce2cd1-5fa8-4e9b-ae18-2f889175fc9b",
+      "comment": "Попытка проверить цвет",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e25e7ee4-a322-4010-bd97-8721537eb914",
+      "comment": "",
+      "command": "assert",
+      "target": "css=.li1:nth-child(7) .st0.color",
+      "targets": [],
+      "value": "#FF0000"
+    }]
+  }],
+  "suites": [{
+    "id": "b9dd9111-77ac-4483-903d-fc47f7197eda",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["54d23de0-0de8-48ad-ae93-dc192b5384a8"]
+  }],
+  "urls": ["https://pastebin.com/"],
+  "plugins": []
+}
